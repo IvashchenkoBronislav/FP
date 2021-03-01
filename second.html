@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Web(User)</title>
+    <link rel="stylesheet" href="css/manu.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyB5vXDtFQKrFgcFWCfn_taD0iXOdt8vIM0&callback=GoogleReadyHandlerumvfedfk" async defer></script>
+<script src="js/map.js"></script>
+
+<body>
+    <img class="BackGraundHeader" src="css/png/BackGraundHeder1.png" alt="">
+    <img class="BackGraundHeaderNav" src="css/png/BackGraundHeder2.png" alt="">
+    <button class="log_in_button">LOG OUT</button>
+
+    <div class="header">
+        <div class="header__heading">
+            <div class="header__heading__big_text">
+                <div>S</div>
+                <div>ublime</div>
+            </div>
+            <div class="header__heading__smoll">
+                <div class="header__heading__smoll__text">
+                    <div>S</div>ublime: A one page responsive wordpress theme</div>
+                <div class="header__heading__smoll__text">suitable for any kind of business representation.</div>
+            </div>
+            <div class="header__heading__text">Download the psd.</div>
+        </div>
+        <div class="header__nav">
+            <div class="header__nav__text">
+                <div class="row">
+                    <div>We</div>&nbspcreate
+                </div>
+                <div>Awesome Games</div>
+            </div>
+            <div class="header__nav__butt">
+                <button id="aboutSublime">About</button>
+                <button id="ourTeam">Development</button>
+                <button id="fProjects">Projects</button>
+                <button id="blog">Blog</button>
+            </div>
+        </div>
+    </div>
+    <div class="aboutSublime">
+        <div class="aboutSublime__intro">
+            <div class="aboutSublime__intro__bigText">
+                <div>About</div>
+                <div>
+                    <div>S</div>
+                    ubl
+                    <div>ime</div>
+                </div>
+            </div>
+            <div class="aboutSublime__info">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.
+                </div>
+                <div class="aboutSublime__info_text">
+                    Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum
+                    tempus urna, sed aliquam lectus egestas eu. Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris
+                    id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu
+                </div>
+            </div>
+        </div>
+        <div class="aboutSublime__i">
+            <div>
+                <div id="aboutSublime__i__icon">
+                    <svg class="aboutSublime__i__icon__1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65px" height="65px">
+                        <image  x="0px" y="0px" width="65px" height="65px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA5CAMAAAC7xnO3AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEX/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD7tCr2wFfzy37v1J7t27rq4c/p5d/o5+b8rxrzyHXu2bHo6Oj8siPx0JLp5Nn+qwzx0JDp5uL5uTzr4Mvw0pn+qgjt2rb+rA/r38f///+eYfsIAAAAG3RSTlMAM2GLr83l9v5FhsQTZLMGYrxAo2zYGYwln6acuMf9AAAAAWJLR0Q13rbZawAAAAd0SU1FB+QJFQEzE1rBeDEAAAGVSURBVEjHpZd7l4FQFMUvSZ4pSbKFQqcUCd//s02DmTXGI527/2z1W53OPY99hXimWl1pqE2tpTXVhlKviQ/V7nRxr26nXY71+nrx6sybL5Z+sAr85WLuzYoner/3lhsYJrDehHSvcLMGTGPwGhxaQBRv6VHbOAKs4StwZCNJd/RcuzSBPXrKjR1gn9FrZXvAGT+CExc40HsdAHfyAE6RH6lMxxzTf+jYxelcChKdT3DvA3aQfwIWaA7nLqtAeai3gIE/GR7apcn5myb791wHFvYfg0R7WD/VZCDJKpBZAuNW5CbSCiBRCvNa/n1Eu0rkLkL/QuqIK4FEMfRLI2O9rUhu1/hu9Q42FUGiDToF2UVYmQzRLYYVZpVBohlqog6PQXqoCwVzBjmHIhpYMMgFGkLFkkEuoYomfAbpoyk0BAwygCZaWDHIFVoS3+T/Jz+3/PPk1xC/bvm9wu9PiZnAn0P82Scxb/kznr9XJHYZf39K7GwJnyDhTfh+SMKDSfg+Ca8pJPythKcWfB9/EfPucNUn95Uvp2Z4j8NI30kAAAAASUVORK5CYII=" />
+                        </svg>
+                    <svg class="aboutSublime__i__icon__2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="20px">
+                       <image  x="0px" y="0px" width="30px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAQAAAAwokVPAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkCRUBMyzsp1UMAAABxklEQVQ4y43UT0hUURQG8J+DppVUCNUmCNpZTTtDqFZCEkwtyoVRy6BFq3ARUpYuWrgoqEWLct2iRWi2dVe4CcroD4WUYcb4l6wYUcd5Leb6fOPMgOcs3jnfPd873z33cmus21Ed2h20R3UrWPDFoCE/N8B6t8yLtuyfXVqnNhjYEuWrfiMhXnG9SL4TL2fddtNoReoPaew2GPKCDOmE4HfgXkXy66CzK0bep3RoivdeB7ZVHNZhrWhyPkaaU9rBgnETvoNpE8ZNKYSijy66YtmwQa8c1y/juUieOZFIT1mnU3IikZyT4EIQ+wTs81YhZQfIl5FX4+8vMBnyWbBoVk1tgNpQJ+sxTmuVd0hxrdENXRr0YEm9TkPGXHbCiiCu6B/Aw7JJz/gtr9suGTNWZRVEcqXkMXA/gRTi6E3Q2BcjuVTJPrdLa7Y/zj/p9jfEteEgdyYJyc5r/li0ErJlnbgbsrxHjrjm30Znlqrc5Mlw+Wv0JghJz62fc6lnPXAsoa7N0wo/yDFcBo44UHbqdVp821S3yhn5EmjN2SpPQd8m8jS1ekqg3jDVctvrWaJuXkdxJBkvzJnz0jkp1a3RVaMWTRnQwn9go0q1/Pez0AAAAABJRU5ErkJggg==" />
+                       </svg>
+                </div>
+                <div>
+                    <div class="aboutSublime__i__text_1">App Development</div>
+                    <div class="aboutSublime__i__text_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis
+                        molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="aboutSublime__i__icon">
+                    <svg class=" aboutSublime__i__icon__1 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="65px " height="65px ">
+                        <image  x="0px " y="0px " width="65px " height="65px "  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA5CAMAAAC7xnO3AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEX/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD7tCr2wFfzy37v1J7t27rq4c/p5d/o5+b8rxrzyHXu2bHo6Oj8siPx0JLp5Nn+qwzx0JDp5uL5uTzr4Mvw0pn+qgjt2rb+rA/r38f///+eYfsIAAAAG3RSTlMAM2GLr83l9v5FhsQTZLMGYrxAo2zYGYwln6acuMf9AAAAAWJLR0Q13rbZawAAAAd0SU1FB+QJFQEzE1rBeDEAAAGVSURBVEjHpZd7l4FQFMUvSZ4pSbKFQqcUCd//s02DmTXGI527/2z1W53OPY99hXimWl1pqE2tpTXVhlKviQ/V7nRxr26nXY71+nrx6sybL5Z+sAr85WLuzYoner/3lhsYJrDehHSvcLMGTGPwGhxaQBRv6VHbOAKs4StwZCNJd/RcuzSBPXrKjR1gn9FrZXvAGT+CExc40HsdAHfyAE6RH6lMxxzTf+jYxelcChKdT3DvA3aQfwIWaA7nLqtAeai3gIE/GR7apcn5myb791wHFvYfg0R7WD/VZCDJKpBZAuNW5CbSCiBRCvNa/n1Eu0rkLkL/QuqIK4FEMfRLI2O9rUhu1/hu9Q42FUGiDToF2UVYmQzRLYYVZpVBohlqog6PQXqoCwVzBjmHIhpYMMgFGkLFkkEuoYomfAbpoyk0BAwygCZaWDHIFVoS3+T/Jz+3/PPk1xC/bvm9wu9PiZnAn0P82Scxb/kznr9XJHYZf39K7GwJnyDhTfh+SMKDSfg+Ca8pJPythKcWfB9/EfPucNUn95Uvp2Z4j8NI30kAAAAASUVORK5CYII=" />
+                        </svg>
+                    <svg class=" aboutSublime__i__icon__2" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="30px " height="20px ">
+                       <image  x="0px " y="0px " width="30px " height="20px "  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAQAAAAwokVPAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkCRUBMyzsp1UMAAABxklEQVQ4y43UT0hUURQG8J+DppVUCNUmCNpZTTtDqFZCEkwtyoVRy6BFq3ARUpYuWrgoqEWLct2iRWi2dVe4CcroD4WUYcb4l6wYUcd5Leb6fOPMgOcs3jnfPd873z33cmus21Ed2h20R3UrWPDFoCE/N8B6t8yLtuyfXVqnNhjYEuWrfiMhXnG9SL4TL2fddtNoReoPaew2GPKCDOmE4HfgXkXy66CzK0bep3RoivdeB7ZVHNZhrWhyPkaaU9rBgnETvoNpE8ZNKYSijy66YtmwQa8c1y/juUieOZFIT1mnU3IikZyT4EIQ+wTs81YhZQfIl5FX4+8vMBnyWbBoVk1tgNpQJ+sxTmuVd0hxrdENXRr0YEm9TkPGXHbCiiCu6B/Aw7JJz/gtr9suGTNWZRVEcqXkMXA/gRTi6E3Q2BcjuVTJPrdLa7Y/zj/p9jfEteEgdyYJyc5r/li0ErJlnbgbsrxHjrjm30Znlqrc5Mlw+Wv0JghJz62fc6lnPXAsoa7N0wo/yDFcBo44UHbqdVp821S3yhn5EmjN2SpPQd8m8jS1ekqg3jDVctvrWaJuXkdxJBkvzJnz0jkp1a3RVaMWTRnQwn9go0q1/Pez0AAAAABJRU5ErkJggg==" />
+                       </svg>
+                </div>
+                <div class="aboutSublime__i__text">
+                    <div class=" aboutSublime__i__text_1 ">Game Design</div>
+                    <div class="aboutSublime__i__text_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis
+                        molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="aboutSublime__i__icon">
+                    <svg class="aboutSublime__i__icon__1" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="65px " height="65px ">
+                        <image  x="0px " y="0px " width="65px " height="65px "  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA5CAMAAAC7xnO3AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEX/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD/qAD7tCr2wFfzy37v1J7t27rq4c/p5d/o5+b8rxrzyHXu2bHo6Oj8siPx0JLp5Nn+qwzx0JDp5uL5uTzr4Mvw0pn+qgjt2rb+rA/r38f///+eYfsIAAAAG3RSTlMAM2GLr83l9v5FhsQTZLMGYrxAo2zYGYwln6acuMf9AAAAAWJLR0Q13rbZawAAAAd0SU1FB+QJFQEzE1rBeDEAAAGVSURBVEjHpZd7l4FQFMUvSZ4pSbKFQqcUCd//s02DmTXGI527/2z1W53OPY99hXimWl1pqE2tpTXVhlKviQ/V7nRxr26nXY71+nrx6sybL5Z+sAr85WLuzYoner/3lhsYJrDehHSvcLMGTGPwGhxaQBRv6VHbOAKs4StwZCNJd/RcuzSBPXrKjR1gn9FrZXvAGT+CExc40HsdAHfyAE6RH6lMxxzTf+jYxelcChKdT3DvA3aQfwIWaA7nLqtAeai3gIE/GR7apcn5myb791wHFvYfg0R7WD/VZCDJKpBZAuNW5CbSCiBRCvNa/n1Eu0rkLkL/QuqIK4FEMfRLI2O9rUhu1/hu9Q42FUGiDToF2UVYmQzRLYYVZpVBohlqog6PQXqoCwVzBjmHIhpYMMgFGkLFkkEuoYomfAbpoyk0BAwygCZaWDHIFVoS3+T/Jz+3/PPk1xC/bvm9wu9PiZnAn0P82Scxb/kznr9XJHYZf39K7GwJnyDhTfh+SMKDSfg+Ca8pJPythKcWfB9/EfPucNUn95Uvp2Z4j8NI30kAAAAASUVORK5CYII=" />
+                        </svg>
+                    <svg class=" aboutSublime__i__icon__2" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="30px " height="20px ">
+                       <image  x="0px " y="0px " width="30px " height="20px "  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAQAAAAwokVPAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkCRUBMyzsp1UMAAABxklEQVQ4y43UT0hUURQG8J+DppVUCNUmCNpZTTtDqFZCEkwtyoVRy6BFq3ARUpYuWrgoqEWLct2iRWi2dVe4CcroD4WUYcb4l6wYUcd5Leb6fOPMgOcs3jnfPd873z33cmus21Ed2h20R3UrWPDFoCE/N8B6t8yLtuyfXVqnNhjYEuWrfiMhXnG9SL4TL2fddtNoReoPaew2GPKCDOmE4HfgXkXy66CzK0bep3RoivdeB7ZVHNZhrWhyPkaaU9rBgnETvoNpE8ZNKYSijy66YtmwQa8c1y/juUieOZFIT1mnU3IikZyT4EIQ+wTs81YhZQfIl5FX4+8vMBnyWbBoVk1tgNpQJ+sxTmuVd0hxrdENXRr0YEm9TkPGXHbCiiCu6B/Aw7JJz/gtr9suGTNWZRVEcqXkMXA/gRTi6E3Q2BcjuVTJPrdLa7Y/zj/p9jfEteEgdyYJyc5r/li0ErJlnbgbsrxHjrjm30Znlqrc5Mlw+Wv0JghJz62fc6lnPXAsoa7N0wo/yDFcBo44UHbqdVp821S3yhn5EmjN2SpPQd8m8jS1ekqg3jDVctvrWaJuXkdxJBkvzJnz0jkp1a3RVaMWTRnQwn9go0q1/Pez0AAAAABJRU5ErkJggg==" />
+                       </svg>
+                </div>
+                <div>
+                    <div class="aboutSublime__i__text_1 ">Content Creation</div>
+                    <div class="aboutSublime__i__text_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis
+                        molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="featuredProjects">
+        <div class="featuredProjects__intro">
+            <div>F</div>
+            <div>eature</div>
+            <div>d Projects</div>
+        </div>
+        <div class="featuredProjects__nav">
+            <button>All WORKS</button>
+            <button>GAMES</button>
+            <button>APPLICATIONS</button>
+            <button>CONTENT DEVELOPMENT</button>
+        </div>
+        <div class="featuredProjects__cycle">
+            <div class="cycle_wisebel" style="left: 0px; right: 0;">
+                <div class="cycle_div">
+                    <div class="div_img"><img class="img" src="img/gams-13.png" alt=""></div>
+                    <div class="div_img"><img class="img" src="img/gams-10.png" alt=""></div>
+                    <div class="div_img"><img class="img" src="img/gams-11.png" alt=""></div>
+                    <div class="div_img"><img class="img" src="img/gams-12.png" alt=""></div>
+                    <div class="div_img"><img class="img" src="img/gams-13.png" alt=""></div>
+                    <div class="div_img"><img class="img" src="img/gams-10.png" alt=""></div>
+                    <div class="div_img"><img class="img" src="img/gams-11.png" alt=""></div>
+                </div>
+                <div class="cycle_div">
+                    <div class="div_img"><img class="img" src="img/gams-17.png" alt=""></div>
+                    <div class="div_img"><img class="img" src="img/gams-14.png" alt=""></div>
+                    <div class="div_img"><img class="img" src="img/gams-15.png" alt=""></div>
+                    <div class="div_img"><img class="img" src="img/gams-16.png" alt=""></div>
+                    <div class="div_img"><img class="img" src="img/gams-17.png" alt=""></div>
+                    <div class="div_img"><img class="img" src="img/gams-14.png" alt=""></div>
+                    <div class="div_img"><img class="img" src="img/gams-15.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="strategicProcess">
+        <div class="strategicProcess__info">
+            <div>S </div>
+            <div>trategi</div>
+            <div>c Process</div>
+        </div>
+        <div class="strategicProcess__text_intro">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.
+            </div>
+            <div>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus.
+                Sed rutrum tempus urna, sed aliquam lectus egestas eu. Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio.
+                Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu. Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus
+                vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu. Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur
+                diam. Suspendisse justo sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu.</div>
+        </div>
+        <div class="strategicProcess_div">
+            <div>
+                <img src="img/scrin/img_3.png" alt="">
+                <div>
+                    <div>Our Process</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</div>
+                    <div>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula
+                        lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>Method</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</div>
+                    <div>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt </div>
+                </div>
+                <img src="img/scrin/img_2.png" alt="">
+            </div>
+            <div>
+                <img src="img/scrin/img_1.png" alt="">
+                <div>
+                    <div>Outcome</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</div>
+                    <div>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="servicesProvided">
+        <img src="css/png/background_1.png" alt="">
+        <div class="servicesProvided__info">
+            <div>S</div>
+            <pre>ervices </pre>
+            <div>Provided</div>
+        </div>
+        <div class="servicesProvided__info_stat">
+            <div>
+                <div>
+                    <div>App Development</div>
+                    <div>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie
+                        tincidunt
+                    </div>
+                </div>
+                <div>
+                    <div>App Design</div>
+                    <div>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie
+                        tincidunt
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>Game Development</div>
+                    <div>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie
+                        tincidunt
+                    </div>
+                </div>
+                <div>
+                    <div>Game Design</div>
+                    <div>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie
+                        tincidunt
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="ourTeam">
+        <div style="height: 80px;" class="ourTeam__intro">
+            <div>O</div>
+            <div>ur</div>
+            <div>Team</div>
+        </div>
+        <div class="ourTeam__team">
+            <div class="ourTeam__team__info">
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</div>
+                <div>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt </div>
+            </div>
+            <div class="ourTeam__team__lead">
+                <div><img src="img/photo/JohnDoe (1).png" alt="">
+                    <div>John Doe</div>
+                    <div>CoFounder / CEO</div>
+                </div>
+                <div><img src="img/photo/JohnDoe (2).png" alt="">
+                    <div>John Doe</div>
+                    <div>process Manager</div>
+                </div>
+                <div><img src="img/photo/JohnDoe (3).png" alt="">
+                    <div>John Doe</div>
+                    <div>Sales President</div>
+                </div>
+                <div><img src="img/photo/JohnDoe (4).png" alt="">
+                    <div>John Doe</div>
+                    <div>Developer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="testimonials">
+        <div class="testimonials__intro">
+            <div>T</div>
+            <div>estim</div>
+            <div>onials</div>
+        </div>
+        <div class="testimonials__info">
+            <div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</div>
+                <div>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt </div>
+            </div>
+            <div class="testimonials__info__svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="127px" height="127px">
+                    <image  x="0px" y="0px" width="121px" height="121px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAB5CAQAAAC380bCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkCRcJNhbzxuHIAAAhXklEQVR42tXdaZNk53Un9t9dcs/KWnvfsBMgQJEECFGkQuKA1MKRNRpZsjwjix5SY0dMhP0B/NZfwa/8wg5HmFpmRlRoPJRHtqjhKsmkBJEEsaOBRjd632rPPe/iF/lUdaO7uruqQNqc0xHd1ZWZN5//Pc9ylv85N/KTlQUPOemwYw5btGhBR1NTTSI30te3YcWyZVddctV556z8JIcU/YSuetgJJxzymIfMapvR1tDQEN/51rIwMDDQtalr3TnvuOaCC64qf9ohxzrmHPKEJzzuEccdiVGEF4spxPd9fdNQfud1rrjoXW877bRr1myES/xUQY5Q84iP+rjnfdjSljaj+yiqZsL2LYlESqVYLJv++qbXveiHfuRdI348Ov9xQT7qwz7peR8yZ1bj9i94v1an/5tqvGaiCL+LlShF70c2sG7NW170d153+acDct1JH/HznvaUE7cuG23PxaqJUiQNOk0lEv3wc91AqWKsYSyXKhR3q/OCN7zmb73ivOH/f5AjDYue8xkv+Jn3XymVGIGKQiQSGauo6mmbmCARSVRRSA009UyCxvOdvq/0sm/6tu9bNtj/JE8+AOSOT/uCL/qco3dep9gedIp6WOp1qUwk1zFvQSE1Ecm1pXoypShM7nh7Cdx2ixd9xEccNnEj3NH/DyHXPO93fMFnPa6+dZXorkmzqKelqa+qY7oKxupOmrfgslNWdBzRlliXK1VUJCJpuGlbykymf9Uc9rDHLcnc2Hky/CQg1xz3eb/vN33czO0oY4lCohRLlJ70UdfUHbJpSeaA58x601EdNROXDEw8omZV1Yw5J+TisKbznVddZCZ6xBNOSmzsdML9uCFHmj7mn/lvfNbsnS+WCpG6iVSq7le9ac6ck456yKrj5rykYlZfKpZrO+KmdbmaJbNysVRdoheGV1VKFKrhVA8y62mPaepamZ5oPznITf/UF/wTD9/5yciMsUSqQOawirqBrsPWLKko1ORKpZGBijlVmTVzNoyNjIx1NbSclBtKFGIRZhUmktsOMzDvUYfFzoSj4CcC+RG/67/18w7d/blIrjCjgrafddgRMzJVHR8S63lC6j3vKW2YtYgMicSKpjGGCjWrukZqmrpqxlJjiaM2pcFY2R77nIc8quqG1Z8E5BnP+F3/ytNqO7+hMG/g5zzjhJqqBbNOOeCCowpruO4VE2N1S2ouqxjYENnQVRNZRd9YZM1AzURDLDKQSowJh9htUnPcU2LrusY/XsgNP+e/8s8cu9MtmK6vihKZD6nqGxspJE4YumpW1znvecUbxqpOqpp4zxoGeuHTha7MWKk0NpbKVUzEJiKFgVi0814141FNm67ublXvDvKMz/qif3w34DhsKFVNM5bEYjXPeVZbR01i1UEjV6xawYzDDimdsaYlkzis0JXYFIlUJSZiDaVYLpMpg71WNQ46ju4cxKwTFvVc2Y2mdwP5oM/5ol+1ePdL05W14COGHtNyzK/7x2atGOhbMbQpds5Fq1KlQuKgvmWFuhlPKV2XiMQSaXArmqggDqdzqaalYWIsEt++hd1Syilz+m6Grf4DQI4c9Et+z+fM7PwykQU9Q0962mc9q3TNO961oXRe1TUXbEjkSpGR3IJSS9Nhh1xRdyDs2UW4jVWFwkBuIhKJZTZMzdj89g3sdqk5blbftWC+7xty2+f8nk+ZvZddEGmoiDV9xKzICGedNaNpqOqKXM/QASOpuqqhkTrWNa17Us2y2IZIRSqVGyNXkcgUIjWF3MhYer/lWrFozprz95/e94fc9IIvecH8vd2PWKY06xGf0DGW6ltS11dz3qp1cxJP29Q1p2qgqyM1UKr7qMKbBjJVNYVSLAt/JsZItRRGwaKbnsv3iBdEmo6aseLi/U7q+0Ge8Ulf9PmdpzSRWKmidNwLfkXLkhMmGm46Z8ZNNV0dBz2qgkTLuk2z6ElVndRwxkhd1VgmNjEJzkUUJng1+NalrWWU7uRcbknNcTXX3by3pu8H+Wm/59fureGpE5E77iN+FqWb+s7b8J6+47pmPOaUuqGGVamBNak5G1JDFWOzDsusuagvVcoC1FRTVSTbdjozSdi4ErYN0B2k4gDec3XvkI/6kt9x9H4edanmmMcc8A82HNBR0XXVuqrXXbfpmhXXXbAqc92mkdJITaYqEntOzRuuycSqJioihVLdXABfk0nUZcikmARDNApW9x37d6TlsMybNvcGedHv+pcevn8IIfWYJSesynzG0w7KVG3qaeoaYiTTd9WKZWt6crnEWKEi0nNZ37JSrhog17VClCSSaMhFUplMrpBLxOGnrYjZDtNv1lFd7xjsFnKk6fP+e0+7r1TMqJvTlfmEQ8560dd8x6ZCoiM1UbXirLGJrqFIaaRUVdGQmMgNREpdkUIcANVEhgqRzMhEbCQL+swUYik7nc63ZMFBl53daYPfCXLNx/zXfl717ntxu8w54YCeoY970hsu+54Nx6zq6nhLVc8b4VsjE4VcLsbY2FhsCQ2RXK5qHA6lUj/s0B2liUwhF4tUtoe0tQBI7wV8Bu/tFEbYCfIx/9xvOHD3C7fua+SYp+TeMuc5LWuuiB1w1FFLHrbi76XGVjS1pWFrKiQqEm0NCdoWNdWthOBPXWkiN1Ga15GIDdVUtcVSNXUzYmUIH0xjoveAXDVn4C3rD4bc9Hm/77G73Yfbg61VibfdMGdGjLaxJR0nDbRNvKgnsxx0MNTTDxGtOhZlUonCYQu6lqXachsSVZmakzas6SokZtRUVVQwMlYaK5AHyPeUtnmXvHPnGX035Gf9vs/uBPiW1OR6qGmYs+6k3GUXzBnq+qEf6avb1JOjF0zJLU8oUTPR00Aq1zfcjngywqxNq8HIqUpVNYK5UpqEPaHcjoCn6jtbHrHDcmdcuh/k2Jzf9ts67iuFQiTFow6bccCql/WMXPKadw31ZPpiZMbBaExkKGRBRzVVY01zTto0MTAJjkOpJ7UVdugobWgaK6QySdDwrXBBfm9dz7ru9W0XbAfIqU/7Fz5mFxLJVZ0UOarpvJ55F7xpWW4sD1ZUYRzWaYRCIpGK0NZ2wEHzFrRk1m2GV6cHWSSVGhsbKox1VVRk5sJ3R9s2WHm/yd0ROev87XZL8j4UR33BL2vtBnJsGpk+5bA1Z81YcUEuViqVqrKgi6kvRKmiqa2to23GrHlLDqiZaCHVVtEzIthdsUImM5JJw4oeBxt7Ypex+7a+V283S9LbXmx4zj/aySu+U7+lCmZ1RGJdL1rXcslIEoaZGAbzcDqwCirqmurmtRUKNbOa2iJz6h6XuWzVRZetG0lESnWxoUhkYqguN8IYld3G7hf9I39t+ZZLeTvkQz7jsQcHDaan8xE9A1Xr3nLeQ+oSqZbSMBxBhQlyhYZYw7yGlo55zaC9eW0LSB3WVNG3Yt1ll7xqWamu0BAZBjNkM2SsUoWKye5C2InHfMaPnL31i1vgX/ClnWJbd0sp0ZdrqDvkjJOed0nhWYd1LDllSSWs5UjNjJoZ8+bN6+iY1dS0YN5BqRktValcoqPliCccxsSMUqqloWoiFhvKwkLpBMi7mN6pttPe3lrPW5Ajh/1zv7EdzLrPTYuUCrk25kwUPuy8l8RqGh51wJyuDQOZUqKmpqGmoqGuYl5NFXUVsUTNjEQSbKyKqpajOiZiuaO66h5Vs4GJ6TpnoiK/zY28z7AjB132I933T+zSk555sIYr2wm2hqFZi2YtaLkh1jZvVtfQxCUbMplETUVVVV1NrNRWUQl3tiZVVRerqYhNN8VUKfeokdcMrDjsZTXHjZwXIZPLVFTDsQexlu69NB6JPOPJrez0lpbr/kv/2b2CAbdP6TIAXlDxsHmZkRsuSS04oTAUW3Vl28Gri6RBl5G6pkQ1+L5Tv6khVhGF5GuqGsJ/cypWvW1Tx1siS1aMA4JamGvF9unzgB284aoXp3coCcAf8y88d+/Z8f4XKk4ay3Rs2BA5bUVi5JqJVWecQUUSgEViNU2xREtFGjymRKKuLRWJVIK2UrE45KQbMpe95xFtZzRM8xmlWCEXhf1i63S+r7R0fd+qcgvyrF/wWw4+SMfT25UrZebExq7rWHNDrimx6qK+JAw7DUOJJBLTWPeU/ZSKpSpqmmri8KcQhek9zU+PlVpWXTHyabkrIkzCab/lnUV2xZyJlE5PGQhTyEt+06cfbIJsmRSFkU2Z3BEdF2SaRoYmUlWFyC2nLgrTtWEmrN2KOEzfWCPcmDy8NzFlEBVBf3Vtl72u9HGRoUaIeeZKeXjnruWaH9rYgvyUL3k4zK37ShmCL5HIooa6dctqhiby7bxjbTtLGCklKlJNTRV1qYp4O21eCa5BrhSHKZ4bK4IN13DASQOvazthYkbFhiKE+uvhINyVxPg7l6aQIy/4PXO7v10p4RTd8J7YSBkgRFpi1RBvToIlXtHSUlFTVVNTDeDiMMm3Vv5U85HCRBameKTjcbkf2kTqkMyqKASM3C/a+X6paPq+V6bYD3niwWbm1q3a8mMaGoZWNcKGMo13HpMojOSqwdycaiMNep9qL5FsEyQKZdDsNLo1PQQjyXY8e6Tl1/2alr4L+mZVNLXU1EIyZ5ey6AmHpgo76fHdZiDLbbc8krgRIExTobmGNZXgL03XZC42CX7PdBub/j09jGJbkY1MHFzA6VQtQ8hoegMydc+b9T09b4lNTZJSRRGczV1J4nEnXY1x3CO7vVG3HLVcV1tsIpaF4M1EqXUbR6+C3MTYxDSg0FRXE6lqBupErjDSN5SbBI95ZCIPW9Q0gFRoO+6glopVY0MbRkb3zlDtLI84PtXyoVsUtd3LSCo3wUhsSdW6QuKmQiqRmtriU5JTrGnOnKaKhqqGpixM4WkuIpfJg0ESyaW29uMyxLoaTnjPSBKCQUO17bzGLuXEdGIveNzS3iFHUqWqiaqWXNdEPaTSKxKxiiycwqm6dmA6VjTU1FVNDIOzGamGxVJXCUDjcFCNkMlEUksWDMOukIcA8ZR7tEvQSx63kHrIQ+9zIXctQw19zFiQuqwMgfVUXSu4CVNdV8yY0dJRVVXTCOG7qfWUo6YqD6nzVKQqNw4b4FAe1ndT1aIN3bCD5GFG7FpSD3kodXIvx9Otz1YVho456YhNl00MFApNVQ2Lakqxis3AezxgXlukHZKq1ZAwHwUXs2EaF0vVVMIhF4djrh+0OGvBe+Lt2Mg0uFTshZU552Tq8O4CP7dLJDWUWFA3b2RVYWRBP/hOdTMOO+6is2oaIrFUOzgQedjHSy0TE4mpIxmFvPJ4O5s8XSQNYxtI1NWsG8tFYXZE4fSuiN8f07uXtBxOHXuw/3Qn4NJQKvGEtrNuWlKaNdANEchU4aiDfmSs5V0jFXPmzFnSNq+jVNcI+/LUWCFzyXUXLZsyCY5b0DBvXsvYREOkYlVVS1fFgkJPJjIjtr679TzjWOqw9t4gT03JzG/577zkD61ad9wBf41MT2ZiaM3/402RdZsKJAo1hy2Z94gTZmQKmZFYqavvjO95x8qWJy/WseS4E+r6mh42i7G+pvkQb8kVasrtqf9AaTucWrydML572BWL/id9m24o3PRfeMZr6jJdm97xA3Ujq2GvjQPT+rJLSt9zzCnHzEuM5FatO+28Qs2Cwya3+c0DY7Mib/mmWE2CzFBHLtHUk6nvNg5Gw2Lk257b+2quqnvM2+qGBjIc9YTvO+UtE0/4VT0XvGRD23FHtAxtuqYnlpno6yvD7jwd7iMeNRtob7ElB81rSVxzXtOHxN7yZ3qBvByZU1VqWNXfC5+x5/upBfW9azk3cdMgrERKm1626VXM+iUf9pdetmbOMVU3XdANCZuKuqp5c67Kt3Xzcz6v57JzztjQV7Egd8SHPG3BG/4B58P86jjloMimDQPru4lP3pK6hVRnPwTl0lgeyAxVDas6NsJrBz3pnLcNdbRd0lOV6TrssNhZXbOBjs6ipshZjzjpips2PWnZNSO/4B8k/tQPfMqGs4bWQ4a8K/ZxkTXvOM9ePGYSnXQvrsgtqRjbVAkRzFRd12xICWSW/EjhlNQVK55ySOFdkUUHLLsq0goZjQ/7pFeclTmqpWvJQ+bNe8+7/nNLcm8aOGbKBB7qo+6KSz4mdzJofk/STPyPuwkNbN2iONDMt/btibqmillJSK2Q+KjzGpakNjSd8rAnPOMps65YDX7zwJoDnvWkD/ueVb+hbiwydNRRn/BJT6g4pGZT5KCHHHHRMHjKSxpGTvr6PmpL0nvxbneS/H0/TVSUJmrq1jRtqiqNrSk87R0zEkdcsKhtVkesL9NzXWZiXWFRU9/TPutPLDsRSHOFU46al7ih7aNO2DTvqGWbDmorPemggZpr1vau5Vq6n5Uch/xuEpyLLaZHZFHPuht+RU03mJrT+FbfyKq+upaeoSEi8+aNfNJXvOYhp/S9o++KrhktudiCWRNNx5yR+R0ve9EhnxOp+sreh04yzYvsUbaiinUdDdcVqnpyNYsqen7oealUpmLRAROjwPbIjXRt2jQKcc1U5riHfMULFj3rlOVwO8YGIlWxiiVjf+lTHvaKiR941G9adW4/kPPE/7D7tXynVHxMxVmFMjgaTzpl0yU3LZqTi4Ln1FFVx8Cqy67oKlUc8Zh5qarSXzrnurpZC2ZCNejQWByIGP+zzL/Ss+ZtD6v6sJ7/az+VQ8NUf+979pZx13Pca0qZupaB1LzfUnrJX/m6E2bULVhSRWbTukuuWgtcrpqW0lhk7Jdd8kOv+rKWJbUQLMoN5YaW1X3CL6lYs4CWT2i6tDOt60HSTx9E5b2f5GrmMQ3z9i05aNELLjkg9rBVF5w2QSpWSqUqOkq5iZpZtRC9qvmiZ41wxTUbuiZShbZZx33Ykxp6rirFqi5ZtOjl/ZVJ9VMb+1nNW/KetraurgMaKmYVTnrGd835GQ9513vGGipqMmPLrlu1YkOuGXyj2MC6GY/blDlmrGeiUFfT0rSoLjIIN6GqIdNX3I8hcj8tbaRWDPduYwu8q8jDWn5L6ZuaKpomBp51xlV/5WGJioOaYqWhdYkohOqqOuqaIasxkquZM12/VWWYD3UNtWAJjIKBWjGjadVwP5CHVlLLBvuBPP26C77kCb/sL7ymryPRF+t4zrdNbFrUUlcPvM2hDdesKkJqph5SsRV96/pmpIHIWFU1G1I6FUwMA/ekEPmUp2Qu7AfywHJseX+7wFTe8qZPOud1v6hpTiJXsS5zQEtdVU0lHE6rrjpvVUVLVSHRkMgtmQv2FGPrrlvTC6u2oRZyI5RGKob6TogNvb2fAQ8sp65u++T7kMxfekVuIFdYMM1aDQxEgTMw9W9HVpx3zrqxplJq5JJlE5kbYWY0jU3Urdk0FqtrK7bLwfLAHuhKHZLrurCfAXddTV26F295d/KiUzqqNlXNihXGBgaBSJyGXPCGcy4YKRSBtJrp+WvzZglcv4NaOmIbVkMyrxEc01ymNDCWKdRUtJzfX1uKTZdSVx9cZnN/PV9VMxYbG4b65IllQw25TKTQc83EkmVDhc2QvYhc8zcOSv3AhrFH/EvHFNh0xiFNLfXAS8nDZpVYc1Kq52/315Gh52rq/H5s81uS6jujY0GkJ1YYue6GibqxQmFiVWzeTbbzwmkoUjij6uOeMfGmx5ySKcz7uMLpEOTPwsQeGSlkVs0b+b/9zf6Gu+Z86pxzgcH/QNkpFVKIjKxLVazqqti0YUMWiE+ZFevGuuHfLOQam2pKT3ncoqaBn7HgvPngoD5q7KZ5dePAFhop1F237oSv+Yu9VvBOJXPOudSKt910eDef2OlQ2JpeN9Qcc1PVqqvWxFYsmjjrvIoNYxs2AuSqqo55qdS6sUJmRcvA8xbcwLRs9aYlU/82k4fi3olv7H+/veltKymuubA7yPeWsUjdhqvaLloNKdOenh/qhYj1OHB4UjWJsZaW8847JA/Tf1XVvFzV0IqOA244FroXxIGMnHyQA+aCa9PM40Xvev6DQYahVZvWwn49zSUtu6ShIJQtNZCEWvR1E13r6g7IA1/wpnUHjay6aN6mGw6Ec3laaHDDtQ8yxHddnEI+7+0PYmezZX6OndGxGnh5kbELRiGBGhuraIegeeqoE2oWvIep6dqxaKSia00uc1FX25oTIe0+Uervtkh5J8m97fwU8jWnLe+OAnVvyIWxwmXHQp65VFoVBVJFris1CTegpnRT0wFPecaGvg1DM2JvW9W3pqonDXXqDV1j1ZAK2Jf3NJVlp7cmdum0N8zsJ2uxJQUKI2OnQ065kOtLdTxh4oJxIBwmahIVkcuuWLCg7oCD2PSaDRMXxerGcrGDjooUUrGxZRf3P8SBN5xWbnE4L/l7H/4gkLcOsNIVS7Z6/WQqjjpuLDZjqGso0TJn3hFL5mzIHDJnRqFw0k3X5I6YeNmLmp5Xkyl0FCZWLO9/gF1/P62ySMN/f+jXdyoTerCkIes/zfFWTHS36xFHUh2x3AGxTTMmwSmsKYwMHVbqWNCSG4gd8nEzRi4auWjREnJ1hYGRd++uANq93PTD6WY/hbzpJad9aG+5jqlsmQRFSJDT1QrkhsymDefMWLCuKjejo6Eqk+q7YUnHTRsOWTTroJGKiYmGiVmPaukqVIL1dWM/7uLW8E57aepNTPfpUtcpT+0103y7rmsh+18GFvaUHjUxNDKrrRsc/YYZFalcaWwQaBGJevC8hnKx68456NlAoRmj6w3f3J/NBVf8e38xzddtGZpD3/UZR/d7RcaGaElkJoF5O628iPRNtE2kodRnGlKN5GYsmdGyoC0JlPJIamzZhzQDOzA3tOKlD+LYv+a7W4mNrakcedOru2cHbkkSqhCzEInqGZkXm4RKxxiJvlXzDppTV0dFTSXUSExpFLlCHKox4tDFcNmGLDT12/CG1/cLt1R41ZtblJJ4+9fX/a1X9+qRRe8LgkehDOEJhfE2iXjTpr5c05J2oLJWJAYhU5yG2GchM9GzYaKt4oq+SGnVZa/71v5P5MKr/tb1LXXe2rAyP/CNvfrO2R0fmJqWP+9UoJ4WUqVla1bVtks3c6uhg0RDM7A/SxM9AxtW0JFrSfT1bBr5++1U7j6k5xt+cGsbuH2Pvubb3vkg5k0ZtqyqT6nIZGzXlfdclpjVUtO1rou2OZGGljTQE0eBa3/TZYmqFSu6vumd/Q8q945v326a325ZZ3oOe3w/8c7bJfGzZgxcUyglylDfGAW3vGtTpq4T+CANM+phUo91xLouelXVceec8x1nPshwbvqqf3d71Oj9zsRA5vHdk1jvlkgVvyiVWdYPrLypVF0TG7khUpoRhRvR1gne0rTRwsR1bzgrVlr3og0zH6RD4ff87169fe7e6T+tmPfkgypbdwY7pZTnSr8otRnW6xTy1F+eKIz1g69cV1Oq66jKTXvExFjxtpdsKqx7VerXwvrel1z0b/z5+5sbvt/eKqz6lu/uBy6VYHw+5bBpvqqtGjowZjas2nDTyEDfhs1QeE3fqq6NUNbZc9YbrutbcdaM39m5eny38l3fCgHTbbk75vWKr3rCM3vxn6ce0lYd8adVDJWh8nwSYpSl3nZdzPTSQ2NtkYkludhAhGXfd01fjkN+xUk399a07ZbkXvVVr9z567sh933Hh8w7uZerT8t5pt5UM/DhpwnTSaiXyEzbKgwkGMiNjXUdMGNZEpj3ib/xCjKJ437BQ9xGldqjXPLnvnN3ZnWnyOY1/8HD/uneiI5blBnGMn2DkDKbbNe4TAO6hdi0p8CMSNuGtnro7BXr+r4h2h7zM45oErjae5auv/Yfdoob7QR57GVf9ZRnd3/92wfVl23XqKehLjEK7Yy2Ui1s6kusuKSlqTDRsOEaKpY85phDFkN/oH3JaV/18k5xo50gl/q+7ohZj+7nu8aBGzIJbJBpT80icKu3ylFK045A0yxTEYp0axYdddCSRQuaMqNQS7dHOePLvr4zXeBeIftlX3HQF5zYC797KlMqqnBkVYNzmAcno3hfleLWUphSbeYsmQ8VsrOh8HsYqnH2IKUL/q2v3CuEcu8sxWV/atZvO7RX0NF2Cytisbph8JpiUahfL7brFhOxlkrwtJoa5nQC76AiCzTXPQG+5s/96b0bS98vMfOOP7Pgn+yVr50Hx366dcXBtShCg7I4VEdNiwAbKlrBY14UKbXUtEOh4ERi2idoD9LzTX92P6P8fpA3fU9T02f3Fi0Zy0TqeoHXVYQqlyg0p0tDw7q6pjltcxZUxBoyQq+vZujolokN9sLg2fQNf+x79/vI/dNvfd9SF/uUxd1P71srOZGJJApZYASRqqhraIZV23BAK5R41VDRCu+blp1N9/ZdSWnZd/2hb93/Aw/KOPZ8RxUv7H563/BEKAFM5cFNjUK1y5Z+5y2YNWvGjFmRcThN6uoqxmrSUKnsTnvxfmP9rn/jOw/y+R+8//dcs6bt2G4Jrl2PmhgEKpNgbuah+CvVDD0MmubNaUtkRorACqOmE9qM5jJd391dHmrT1/2hb7r+oDfu5sjruWBV3eLu1vTQjKaVwMnfKu8rw0+xio4FndBnhFEoBi5FqlqhUjIKJIsz/uNuDM4r/sqXfX037YR3d8qPXXADR7R3c0gOHbJqZIvJM3UstsqwIw1HHNDRVAZtFrLQjKG6baJkRoa+9mCaee6S/8Mf+/buwli7NWwyN5038vBuaud6YqWBSBG6PxVBz4XSROwRh1SkIoWRgVxNS2XbDWUaPjrtzx+8ki/4sn/tld3G7XZvy41d8Z4V8zoPXtUrIYwfBz2WwR+atrPqB07+WE/fhsScBmFPn5YXjRTW/cGDZuqGl/wv/q3Xd5+F3Zv5uuoVa0qzmvf/ZGkY6pymO/VW8fXUucgC+2va7a1hNrggFWmwxCcKI390/9j12EX/0R/44wdvWfuHTOaM9/QtOXT/N+ZGoV9MeVtfiC3rumvFpg101E1TAGko1Y+NZYb+yN/d/yte8yf+yHf2msTYu5MyccPbLsjN3N3g/07Q02zGtB3GFugopNg3FGbUtnvGVLb78yUu+V/96H4XP+9r/jf/3jt7jwTuhy6RW3faOTfR0L63XZYbmm5GxXYN6lbYqGbGjI6qinrQ8rSh4djf+IN7J89LV/2dP/GvfcPyfgIm+2WI5C562XkDda3QiGLH8Q1MQhucKFQal6JwILW0VdTV1aWhe8Qb/tjX7jVXJ3pe93/6sn/nzH7jQz+hZ9C8X2KtwMkuQ4l1pGY21FEs6JjTkHjdd71874Tqj+kZND+hJw3dLUmohamJ1Qh863lzGuoG3nbO6Xt//KfkSUO3yz2fJ3WnVAL1vBoKwcZGhvcO3P5UPk/q1nV2fGrYB5Cf8qeGTWWHZ8Pt6zr/STwb7s6r7voJgPhP+gmAd8tP4XMe/1/qOtfiLYzpYAAAAABJRU5ErkJggg==" />
+                </svg>
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="127px" height="127px">
+                    <image  x="0px" y="0px" width="127px" height="127px"  xlink:href="data:img/png;base64,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" />
+                </svg>
+                <div class="testimonials__info__svg__name">
+                    <div>John Doe</div>
+                    <div> CoFounder / CEO</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blogs">
+        <div class="blogs__intro">
+            <div>B</div>
+            <div>logs</div>
+        </div>
+        <div class="blogs__nav">
+            <button>Latest Posts</button>
+            <button>App Design</button>
+            <button>App Development</button>
+            <button>Design Solutions</button>
+            <button>Quality Assurance</button>
+            <button>Development Mode</button>
+            <button>What’s Out There</button>
+        </div>
+        <div class="blogs__cont">
+            <div>
+                <img src="img/scrin/img(1).png" alt="">
+                <div id="blogs__cont__time">July 4th 2016</div>
+                <div>Lorem ipsum dolor sit amet, </div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. </div>
+            </div>
+            <div>
+                <img src="img/scrin/img(2).png" alt="">
+                <div id="blogs__cont__time">June 20th 2016</div>
+                <div>Lorem ipsum dolor sit amet, </div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. </div>
+            </div>
+            <div>
+                <img src="img/scrin/img(3).png" alt="">
+                <div id="blogs__cont__time">May 6th 2016</div>
+                <div>Lorem ipsum dolor sit amet, </div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="contactUs">
+        <div class="map" id="mapumvfedfk"></div>
+        <div>
+            <div class="contactUs__intro">
+                <div>C</div>
+                <div>ontact Us</div>
+
+            </div>
+            <div class="contactUs__contact_message">
+                <input placeholder="Your Name" id="userName" type="text">
+                <div>
+                    <input placeholder="Mobile" type="text">
+                    <input placeholder="Email" type="text">
+                </div>
+                <textarea placeholder="Your Message" name="" id="messag" cols="30" rows="10"></textarea>
+                <button id="send">SEND</button>
+            </div>
+            <div class="contactUs__contact_info">
+                <div>Location Map</div>
+                <table>
+                    <tr>
+                        <th>Address</th>
+                        <th>Hill Mist garden, Pune, 411 048. India</th>
+                    </tr>
+                    <tr>
+                        <th>Phone</th>
+                        <th>+380 (12)534-6789</th>
+
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <th>firkho@firkho.com</th>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="contactUs__icon">
+                <img id="twitter" src="img/icon/twitter.png" alt="">
+                <img id="linkedin" src="img/icon/linkedin.png" alt="">
+                <img id="faceboock" src="img/icon/faceboock.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="sublime">
+        <img class="sublime_backgraund" src="css/png/maket-sajta-dlya-igrovogo-proekta_0000s_0007_Layer-47.png" alt="">
+        <div>
+            <div class="sublime__intro">
+                <div>S</div>
+                <div>ublime</div>
+            </div>
+            <div class="sublime__nav">
+                <button id="home">HOME</button>
+                <button id="aboutSublime">ABOUT SUBLIME</button>
+                <button id="fProjects">OUR WORKS</button>
+                <button id="servicesProvided">SERVICES</button>
+                <button id="ourTeam">TEAM</button>
+                <button id="testimonials">TESTIMONIALS</button>
+                <button id="blog">BLOG</button>
+                <button id="contactUs">CONTACT US</button>
+            </div>
+            <div class="sublime__icon">
+                <img id="twitter" src="img/icon/twitter.png" alt="">
+                <img id="linkedin" src="img/icon/linkedin.png" alt="">
+                <img id="faceboock" src="img/icon/faceboock.png" alt="">
+            </div>
+        </div>
+        <div class="sublime__tagline">
+            <div>
+                <div>
+                    <div>We</div>
+                    <div>create</div>
+                </div>
+                <div>Awesome Games</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="js/nav.js"></script>
+<script src="js/cycle.js"></script>
+<script src="js/logout.js"></script>
+<!-- <script src="js/index.js "></script> -->
+
+</html>
