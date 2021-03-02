@@ -12,6 +12,7 @@
 
 .load__off{
     display: none;
+    position: fixed;
 }
 
 .loader{
@@ -20,7 +21,7 @@
     border: 30px outset #ffc600;
     border-radius: 50%;
     animation-name: load;
-    animation-duration: 30s;
+    animation-duration: 6s;
 }
 
 @keyframes load{

@@ -53,7 +53,7 @@ body {
     flex-direction: column;
     background-color: #000000;
     user-select: none;
-    overflow-x:none;
+    
 }
 
 .BackGraundHeader {

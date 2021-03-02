@@ -1,7 +1,7 @@
 let loader = document.querySelector(".load")
 
-let loadEnd = ()=>{
-    loader.classList = "load_off"
-}
+let loadEnd;
 
-window.onload = loadEnd()
+setTimeout(()=>{
+    loader.classList = "load_off"
+}, 1000)
