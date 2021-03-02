@@ -1,0 +1,33 @@
+.load{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 99999;
+}
+
+.load__off{
+    display: none;
+}
+
+.loader{
+    width: 100px;
+    height: 100px;
+    border: 30px outset #ffc600;
+    border-radius: 50%;
+    animation-name: load;
+    animation-duration: 30s;
+}
+
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(1800deg);
+    }
+}

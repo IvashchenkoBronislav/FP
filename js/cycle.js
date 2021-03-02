@@ -15,7 +15,6 @@ const infiniti = () => {
             wisCycle.style.left = `${start}px`
         } else {
             wisCycle.style.left = `${nawPos - step}px`
-
         }
     }, 5010);
 };
