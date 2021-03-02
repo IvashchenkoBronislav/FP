@@ -563,9 +563,7 @@
     .strategicProcess_div div img {
         width: 160px;
         height: 100px;
-        padding-top: 75px;
-        padding-right: 20px;
-        padding-left: 20px;
+        padding:75px 10px 0;
     }
     .strategicProcess_div div div:first-child {
         font-size: 20pt;
@@ -586,6 +584,7 @@
         top: -80px;
         padding-top: 0px;
         background-color: #2e2843;
+        overflow: hidden;
     }
     .servicesProvided img {
         width: auto;
@@ -652,7 +651,7 @@
         width: 375px;
         height: 500px;
         left: 0px;
-        top: -50px;
+        top: 0px;
         padding-top: 25px;
     }
     .testimonials__intro {
