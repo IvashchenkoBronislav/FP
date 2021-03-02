@@ -356,6 +356,9 @@
         margin-top: 80px;
         width: 220px;
     }
+    .load{
+        width: 1024px;
+    }
 }
 
 @media(max-width:1020px) {
@@ -815,6 +818,9 @@
         margin-top: 80px;
         width: 220px;
         margin-bottom: 20px;
+    }
+    .load{
+        width: 375px;
     }
 
     .loader{
