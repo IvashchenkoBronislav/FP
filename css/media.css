@@ -435,7 +435,7 @@
         width: 375px;
         margin-left: 0px;
         margin-top: 5px;
-        top: -100px;
+        top: -30px;
     }
     .header__heading {
         margin-left: 10px;
@@ -474,6 +474,7 @@
     .aboutSublime {
         width: 375px;
         margin-top: 10px;
+        top:40px
     }
     .aboutSublime__intro {
         margin-left: 10px;
@@ -516,7 +517,7 @@
     .featuredProjects {
         width: 375px;
         height: 500px;
-        top: -80px;
+        top: -0px;
         left: 0px;
     }
     .featuredProjects__intro {
@@ -652,7 +653,7 @@
         width: 375px;
         height: 500px;
         left: 0px;
-        top: 0px;
+        top: -40px;
         padding-top: 25px;
     }
     .testimonials__intro {
