@@ -374,7 +374,7 @@
     .BackGraundHeaderNav {
         width: 375px;
         left: 0px;
-        top: 255px;
+        top: 175px;
     }
     .log_in_button {
         position: absolute;
@@ -435,6 +435,7 @@
         width: 375px;
         margin-left: 0px;
         margin-top: 5px;
+        top: -100px;
     }
     .header__heading {
         margin-left: 10px;
