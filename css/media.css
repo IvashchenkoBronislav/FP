@@ -386,12 +386,14 @@
         margin-left: 270px;
         top: 10px;
         font-size: 10pt;
+        left: 20px;
     }
     .modailLogIn {
         width: 170px;
         margin-left: 165px;
         background-color: black;
         top: 50px;
+        left: 17px;
     }
     #modailLogIn__text {
         margin-top: 10px;

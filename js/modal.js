@@ -1,52 +1,61 @@
 const modailLogIn = document.querySelector(".modailLogIn");
-const modailRegist = document.querySelector(".modailRegistation")
+const modailLogIn_off = document.getElementById("modailLogIn__off")
+const modailRegist = document.querySelector(".modailReg")
+const regButton = document.getElementById("reg_on")
+const regOff = document.getElementById("modailReg__off")
 
-let toggle1 = true;
-let toggle2 = true;
+let onLogIn = false;
+let onReg = false;
 
+let modail_off_on = () =>{
+    if (onLogIn === false && onReg === false) {
+        onLogIn = true;
+        onReg = false;
+        modailLogIn.style = "display:flex";
+        modailRegist.style = "display:none";
+    }else if(onLogIn === true || onReg === true){
+        onLogIn = false;
+        onReg = false;
+        modailLogIn.style = "display:none";
+        modailRegist.style = "display:none";
+    }
+    console.log(onReg,onLogIn )
+}
 
+let reg_on = ()=>{
+    onReg === true;
+    modailRegist.style = "display:flex";
 
+    onLogIn = false;
+    modailLogIn.style = "display:none";
+}
 
+let reg_off = ()=>{
+    onReg === false;
+    modailRegist.style = "display:none";
+
+    onLogIn = false;
+    modailLogIn.style = "display:none";
+}
+
+let logIn_off = ()=>{
+    onLogIn = false;
+    modailLogIn.style = "display:none";
+}
 
 document.querySelector(".log_in_button").addEventListener("click", () => {
-    if (toggle1 === true && toggle2 === true) {
-        toggle1 = false;
-        modailLogIn.style = "display:block"
-
-    } else {
-        toggle1 = true;
-        toggle2 = true;
-        modailLogIn.style = "display:none"
-            // modailRegist.style = "display:none";
-
-    }
+    modail_off_on();
 })
 
-document.querySelector("#modailLogIn__off").addEventListener("click", () => {
-    modailLogIn.style = "display:none";
-    // modailRegist.style = "display:none";
-    toggle1 = true;
-    toggle2 = true;
+regButton.addEventListener("click", ()=>{
+    reg_on();
 })
 
-// document.querySelector("#modailR__off").addEventListener("click", () => {
-//     modailLogIn.style = "display:none";
-//     modailRegist.style = "display:none";
-//     toggle1 = true;
-//     toggle2 = true;
+modailLogIn_off.addEventListener("click",()=>{
+    logIn_off()
+})
 
-// })
+regOff.addEventListener("click",()=>{
+    reg_off()
+})
 
-// document.querySelector("#buttomRegistation").addEventListener("click", () => {
-//     modailRegist.style = "display:none";
-//     toggle2 = true;
-// })
-
-// document.querySelector("#reg_on").addEventListener("click", () => {
-//     if (toggle1 === false && toggle2 === true) {
-//         modailLogIn.style = "display:none";
-//         modailRegist.style = "display:block";
-//         toggle1 = true;
-//         toggle2 = false;
-//     }
-// })

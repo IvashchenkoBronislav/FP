@@ -987,6 +987,7 @@ body {
 .modailLogIn {
     position: absolute;
     display: none;
+    flex-direction: column;
     width: 400px;
     z-index: 2;
     background-color: transparent;
@@ -1074,9 +1075,10 @@ body {
     cursor: pointer;
 }
 
-.modailRegistation {
+.modailReg{
     position: absolute;
     display: none;
+    flex-direction: column;
     width: 400px;
     z-index: 2;
     background-color: transparent;
@@ -1086,13 +1088,13 @@ body {
     top: 130px;
 }
 
-.modailRegistation div {
+.modailReg div {
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-.modailRegistation input {
+.modailReg input {
     position: relative;
     margin: 0 auto;
     width: 350px;
@@ -1107,26 +1109,25 @@ body {
     padding-left: 10px;
 }
 
-.modailRegistation input::placeholder {
+.modailReg input::placeholder {
     font-family: "MyriadProSemiBold";
     color: #ffffff;
 }
 
-#buttomRegistation {
-    position: relative;
-    width: 150px;
-    height: 30px;
+#modailReg__off {
+    position: absolute;
+    background-color: transparent;
     font-family: "MyriadProSemiBold";
-    background-color: #ffc600;
-    outline: #ffc600;
-    border: 0px;
+    color: #ffc600;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    left: 360px;
+    top: 0PX;
+    transform: rotate(45deg);
     cursor: pointer;
-    font-size: 20px;
-    margin: 20px 125px;
-}
-
-#buttomRegistation:hover {
-    color: white;
 }
 
 #modailR__off {
