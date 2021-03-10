@@ -4,6 +4,13 @@ const modailRegist = document.querySelector(".modailReg")
 const regButton = document.getElementById("reg_on")
 const regOff = document.getElementById("modailReg__off")
 
+let nameRegI = document.getElementById("reg_name");
+let passRegI = document.getElementById("reg_password");
+let passCanfRegI = document.getElementById("reg_password_confirm");
+
+let logInName = document.getElementById('log_in_name');
+let logInPass = document.getElementById('log_in_password');
+
 let onLogIn = false;
 let onReg = false;
 
@@ -52,10 +59,51 @@ regButton.addEventListener("click", ()=>{
 })
 
 modailLogIn_off.addEventListener("click",()=>{
-    logIn_off()
+    logIn_off();
+    logInName.value=""
+    logInPass.value=""
 })
 
 regOff.addEventListener("click",()=>{
     reg_off()
 })
 
+document.getElementById("reg_buttono_cansel").addEventListener('click',()=>{
+    reg_off()
+    passRegI.value = ""
+    passCanfRegI.value = ""
+    nameRegI.value = ""
+
+})
+
+//=================== <> =============================
+
+let regConf = document.getElementById("reg_start");
+let reginfo = {};
+let regError;
+
+let registration = () => {
+    if(nameRegI.value.length >=3){
+        reginfo.name = nameRegI.value;
+        if(passRegI.value === passCanfRegI.value){
+            if(passRegI.value.length >= 6){
+                reginfo.pass = passRegI.value
+            }else{
+                regError = "Короткий Пороль"
+                alert(regError)
+            }
+        }else{
+            regError = "Подтверждение пароля не совподает"
+            alert(regError)
+        }    
+    }else{
+        regError = "Имя слишком короткое"
+        alert(regError)
+    }
+    
+}
+
+regConf.addEventListener("click", ()=>{
+    registration()
+    console.log(reginfo)
+})
