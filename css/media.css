@@ -401,38 +401,38 @@
     }
     .modailLogIn input {
         width: 140px;
+        font-size: 12px;
+        
     }
-    #modailLogIn__button button {
-        width: 70px;
-        font-size: 10px;
-    }
-    #buttomRegistation {
-        width: 70px;
-        font-size: 10px;
-        margin: 20px 70px;
-    }
-    .modailRegistation {
+    
+    .modailReg{
         width: 170px;
         margin-left: 165px;
         background-color: black;
         top: 50px;
+        left: 17px;
     }
-    .modailRegistation input {
+
+    .modailReg input {
         width: 140px;
+        font-size: 12px;
     }
+
+    .modailReg input::placeholder {
+        font-size: 12px;
+    }
+    
     .modailLogIn input::placeholder {
-        font-size: 10pt;
+        font-size: 12px;
     }
-    .modailRegistation input::placeholder {
-        font-size: 10pt;
-    }
-    #modailR__off {
-        left: 120px;
+    
+    #modailReg__off {
+        left: 135px;
         font-size: 25px;
         top: -2px;
     }
     #modailLogIn__off {
-        left: 120px;
+        left: 135px;
         font-size: 25px;
         top: -2px;
     }
