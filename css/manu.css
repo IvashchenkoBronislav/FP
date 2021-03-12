@@ -1153,7 +1153,7 @@ body {
 
 .log_error{
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     z-index: 2;
     background-color: transparent;
