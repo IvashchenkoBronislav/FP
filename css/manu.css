@@ -1107,6 +1107,7 @@ body {
     color: #ffffff;
     outline: none;
     padding-left: 10px;
+    
 }
 
 .modailReg input::placeholder {
@@ -1148,4 +1149,39 @@ body {
 .map {
     width: 700px;
     height: 960px;
+}
+
+.log_error{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    background-color: transparent;
+    margin-left: 1305px;
+    top: 470px;
+    font-family: "MyriadProSemiBold";
+    font-size: 20px;
+    color: #ffffff;
+    border:3px solid #ffc600;
+    border-radius: 10px;
+    padding:20px 40px 20px ;
+    max-width: 20000px;
+    width: 322px;
+    text-align: center;
+}
+
+#log_error__off{
+    position: absolute;
+    background-color: transparent;
+    font-family: "MyriadProSemiBold";
+    color: #ffc600;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 0PX;
+    transform: rotate(45deg);
+    cursor: pointer;
 }
