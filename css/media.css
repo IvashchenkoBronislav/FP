@@ -1,6 +1,5 @@
 @media(max-width:1024px) {
     body {
-        width: 1024px;
         overflow-x: hidden;
     }
     .BackGraundHeader {
@@ -375,9 +374,7 @@
 }
 
 @media(max-width:375px) {
-    body {
-        width: 375px;
-    }
+    
     .BackGraundHeader {
         width: 375px;
     }
