@@ -1,4 +1,4 @@
-const logUotButton = document.querySelector('.log_in_button')
+  const logUotButton = document.querySelector('.log_in_button')
 
 logUotButton.addEventListener("click", () => {
     document.location = "http://127.0.0.1:5500/src/index.html"
